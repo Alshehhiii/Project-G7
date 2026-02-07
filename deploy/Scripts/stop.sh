@@ -1,2 +1,3 @@
 #!/bin/bash
-pkill -f "node src/server.js" || true
+pm2 stop project-g7 || true
+pm2 delete project-g7 || true
