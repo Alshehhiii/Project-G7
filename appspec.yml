@@ -7,21 +7,21 @@ files:
 
 hooks:
   BeforeInstall:
-    - location: deploy/scripts/stop.sh
+    - location: deploy/Scripts/stop.sh
       timeout: 60
       runas: ec2-user
 
   AfterInstall:
-    - location: deploy/scripts/install.sh
+    - location: deploy/Scripts/install.sh
       timeout: 300
       runas: ec2-user
 
   ApplicationStart:
-    - location: deploy/scripts/start.sh
+    - location: deploy/Scripts/start.sh
       timeout: 60
       runas: ec2-user
 
   ValidateService:
-    - location: deploy/scripts/validate.sh
+    - location: deploy/Scripts/validate.sh
       timeout: 60
       runas: ec2-user
