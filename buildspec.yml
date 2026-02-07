@@ -8,7 +8,11 @@ phases:
       - npm ci
   build:
     commands:
+<<<<<<< HEAD
       - echo "Build step done"
+=======
+      - echo "Build completed"
+>>>>>>> f0e536f (Add buildspec.yml for CodeBuild)
 artifacts:
   files:
     - '**/*'
